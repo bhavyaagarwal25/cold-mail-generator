@@ -66,11 +66,11 @@ Generated Cold Email
 Terminal Output
 ```
 ## Workflow
-** The user provides recipient and email details.
-** The application builds a dynamic prompt using Python f-strings.
-** The prompt is sent to Google's Gemini API.
-** Gemini generates a personalized cold email.
-** The generated email is displayed in the terminal.
+- The user provides recipient and email details.
+- The application builds a dynamic prompt using Python f-strings.
+- The prompt is sent to Google's Gemini API.
+- Gemini generates a personalized cold email.
+- The generated email is displayed in the terminal.
 
 ## 📁 Project Structure
 ```

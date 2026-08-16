@@ -28,7 +28,7 @@ Company ka naam: Zomato
 Email ka goal kya hai: Applying for a Backend Developer Internship
 Subject: Backend Developer Internship Opportunity
 ```
-### Example Input
+### Example output
 ```
 Hi Priya,
 

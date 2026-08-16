@@ -27,8 +27,8 @@ Recipient ka role: Engineering Manager
 Company ka naam: Zomato
 Email ka goal kya hai: Applying for a Backend Developer Internship
 Subject: Backend Developer Internship Opportunity
-
-### Example Output
+```
+### Example Input
 ```
 Hi Priya,
 
@@ -41,7 +41,7 @@ and experience could contribute to your team.
 Best regards,
 Your Name
 ```
-🛠️ Tech Stack
+### 🛠️ Tech Stack
 ```
 ** Python
 Google Gemini API

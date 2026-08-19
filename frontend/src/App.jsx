@@ -1,4 +1,6 @@
+import Login from "./Login";
 import { useState } from "react";
+
 
 function App() {
   const [recipientName, setRecipientName] = useState("");
@@ -8,7 +10,7 @@ function App() {
   const [tone, setTone] = useState("Formal");
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
-
+const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
   const handleGenerate = async () => {
     setLoading(true);
     setEmail("");
@@ -34,11 +36,18 @@ function App() {
 
     setLoading(false);
   };
-
+if (!isLoggedIn) {
+  return <Login onLoginSuccess={() => setIsLoggedIn(true)} />;
+}
   return (
     <div style={{ maxWidth: "600px", margin: "40px auto", fontFamily: "sans-serif" }}>
-      <h1>Cold Email Generator ✉️</h1>
-
+      {/* <h1>Cold Email Generator </h1> */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <h1>Cold Email Generator ✉️</h1>
+        <button onClick={() => { localStorage.removeItem("token"); setIsLoggedIn(false); }}>
+          Logout
+        </button>
+      </div>
       <input
         placeholder="Recipient ka naam"
         value={recipientName}

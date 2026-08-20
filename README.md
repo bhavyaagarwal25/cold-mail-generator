@@ -1,4 +1,4 @@
-# Cold Email Generator 📧
+# ReachOut 📧
 
 A command-line tool that generates personalized cold emails using Google's Gemini API.
 
